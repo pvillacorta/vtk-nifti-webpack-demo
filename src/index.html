@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style>
+        main {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+        }
+        input {
+            width: 64px;
+        }
+        #vtk-3d-root {
+            width: 800px;
+            height: 571px;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <div id="vtk-root" style="width: 1200px; height: 800px"></div>
+    <div class="controls">
+        <p>Image bounds: <span id="bounds"></span></p>
+        <p>Plane center</p>
+        <div>X <input id="cx" type="number"> Y <input id="cy" type="number"> Z <input id="cz" type="number"></div>
+        <p>Plane normal</p>
+        <div>X <input id="nx" type="number"> Y <input id="ny" type="number"> Z <input id="nz" type="number"></div>
+        <p><button id="update">Update</button></p>
+
+        <div id="vtk-3d-root"></div>
+    </div>
+</main>
+</body>
+</html>

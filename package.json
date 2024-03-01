@@ -1,0 +1,27 @@
+{
+  "name": "vtkjs-webpack",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --progress --mode=production",
+    "start": "webpack serve --progress --mode=development"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@itk-wasm/image-io": "^1.1.0",
+    "@kitware/vtk.js": "^29.7.3"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "html-webpack-plugin": "^5.6.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.3.3",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.2"
+  }
+}
